@@ -9,10 +9,5 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
-# Add a feed source
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+git clone https://github.com/0x676e67/luci-theme-design.git package/luci-theme-design
+git clone https://github.com/0x676e67/luci-app-design-config.git package/luci-app-design-config
