@@ -9,5 +9,4 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-git clone https://github.com/0x676e67/luci-theme-design.git package/luci-theme-design
-git clone https://github.com/0x676e67/luci-app-design-config.git package/luci-app-design-config
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
