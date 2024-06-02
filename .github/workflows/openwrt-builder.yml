@@ -86,11 +86,6 @@ jobs:
       run: |
         cd openwrt
         make defconfig
-        sed -i "2i # network config" ./package/emortal/default-settings/files/99-default-settings-chinese
-          # 默认 IP 地址，旁路由时不会和主路由的 192.168.1.1 冲突
-        sed -i "3i uci set network.$1.proto='pppoe'" ./package/emortal/default-settings/files/99-default-settings-chinese
-        sed -i "4i set network.$1.username='053205569505'" ./package/emortal/default-settings/files/99-default-settings-chinese # 宽带账号
-        sed -i "5i set network.$1.password='569505'" ./package/emortal/default-settings/files/99-default-settings-chinese  # 宽带密码
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
